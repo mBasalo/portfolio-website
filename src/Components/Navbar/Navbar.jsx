@@ -17,7 +17,7 @@ const Navbar = () => {
         </ul>
 
         <div className='nav-connect'>
-            Connect With ME
+            Connect with me
 
         </div>
 
