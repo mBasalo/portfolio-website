@@ -52,11 +52,11 @@
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     cursor: pointer;
     transition: 0.3s;
-
 }
 
 .hero-connect:hover {
     transform: scale(1.05);
+    border: 2px solid white;
 }
 
 .hero-resume {
@@ -65,10 +65,9 @@
     border: 2px solid #fff;
     cursor: pointer;
     transition: 0.3s;
-
-
 }
 
 .hero-resume:hover {
     transform: scale(1.05);
+    border: 2px solid #b415ff;
 }

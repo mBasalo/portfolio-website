@@ -1,0 +1,119 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 120px;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    position: relative;
+}
+
+.about-title h1 {
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.about-sections {
+    display: flex;
+    gap: 50px;
+}
+
+.about-left img {
+    width: 240px;
+    height: 300px;
+    border: 2px solid rgb(64, 64, 64);
+
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-skill {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: .3s;
+}
+
+.about-skill p {
+    min-width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-skill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+}
+
+.about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.about-achivements { 
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.about-achivement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.about-achivement:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+
+.about-achivement h1 {
+    font-size: 35px;
+    font-weight: 700;
+    background: linear-gradient(267deg, #DA7C25 50.41%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.about-achivement p {
+    font-size: 14px;
+    font-weight: 500;
+}

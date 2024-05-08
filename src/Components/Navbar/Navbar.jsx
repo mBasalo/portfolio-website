@@ -18,7 +18,6 @@ const Navbar = () => {
 
         <div className='nav-connect'>
             Connect with me
-
         </div>
 
 
