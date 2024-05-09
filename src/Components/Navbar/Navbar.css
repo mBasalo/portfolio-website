@@ -2,7 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 170px;
+    margin: 15px 170px;
+}
+
+.navbar h1 {
+    background: linear-gradient(270deg, #DF8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+
 }
 
 .nav-menu {

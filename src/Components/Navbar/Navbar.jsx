@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
 
-        <img src={logo} alt="" />
+<h1>mBasalo.uy</h1>
 
         <ul className="nav-menu">
             <li>Home</li>
