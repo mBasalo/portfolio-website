@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 20px 170px;
 }
 
 .contact-title {
@@ -22,6 +22,7 @@
     bottom: 0;
     right: 0;
     z-index: -1;
+    width: 150px;
 }
 
 .contact-section {
@@ -64,6 +65,12 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contact-detail:hover {
+    transform: scale(1.1);
 }
 
 .contact-right {
@@ -75,7 +82,7 @@
 
 .contact-right label {
     color: #d8d8d8;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -115,6 +122,6 @@
 }
 
 .contact-submit:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 0.3s;
 }

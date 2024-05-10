@@ -5,16 +5,35 @@
     gap: 30px;
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+
+
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 .hero img {
     width: 180px;
     border-radius: 50%;
     border: 3px solid rgb(43, 42, 42);
     transition: 0.3s;
+    overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+
+	animation: float 6s ease-in-out infinite;
 }
 
-.hero img:hover {
-    transform: scale(1.05);
-}
 
 .hero h1 {
     text-align: center;
