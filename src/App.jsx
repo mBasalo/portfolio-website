@@ -12,12 +12,12 @@ const App = () => {
   return (
     <div>
       <Navbar />    
-      <Hero />
-      <About />
-      <Services /> 
+       <Hero />
+    <About />
+       {/* <Services /> 
       <MyWork />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
