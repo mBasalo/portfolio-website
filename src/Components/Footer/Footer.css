@@ -1,13 +1,17 @@
 .footer {
-    margin: 100px 170px 50px;
+    width: 99%;
+    margin: 100px auto 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    box-shadow: 1px 0 8px -2px black;
+    background: #212120;
+    opacity: .8;
 }
 
 .footer-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-top-left p {
@@ -18,8 +22,8 @@
 .footer-top-right {
     display: flex;
     justify-content: center;
-align-items: center;  
-gap: 35px;
+    align-items: center;  
+    gap: 35px;
 }
 
 .footer-email-input {
@@ -61,7 +65,7 @@ gap: 35px;
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 14px;
 }
 
@@ -69,5 +73,17 @@ gap: 35px;
     display: flex;
     gap: 50px;
     margin-bottom: 30px;
+}
+
+.footer hr {
+    width: 100%;
+
+}
+
+.footer h1 {
+        background: linear-gradient(270deg, #DF8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
 }
 

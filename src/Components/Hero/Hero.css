@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    margin-top: 78px;
+    margin-top: 200px;
 }
 /* 
 @keyframes float {
@@ -24,7 +24,9 @@
 } */
 
 .hero img {
-    width: 180px;
+    position: relative;
+    bottom: 50px;
+    width: 220px;
     border-radius: 50%;
     border: 3px solid rgb(43, 42, 42);
     transition: 0.3s;
@@ -50,7 +52,7 @@
     -webkit-text-fill-color: transparent;    
 }
 
-.hero p {
+.hero-p {
     width: 50%;
     text-align: center;
     font-size: 18px;
@@ -90,4 +92,9 @@
 .hero-resume:hover {
     transform: scale(1.05);
     border: 2px solid #b415ff;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
 }
