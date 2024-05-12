@@ -26,25 +26,6 @@ const About = () => {
 
                 <div className="about-skills">
 
-                    <div className="about-skill">
-                        <p>HTML & CSS</p>
-                        <hr style={{width: "80%"}}/>
-                    </div>
-
-                    <div className="about-skill">
-                        <p>React JS</p>
-                        <hr style={{width: "40%"}}/>
-                    </div>
-
-                    <div className="about-skill">
-                        <p>JavaScript</p>
-                        <hr style={{width: "60%"}}/>
-                    </div>
-
-                    <div className="about-skill">
-                        <p>Netxt JS</p>
-                        <hr style={{width: "20%"}}/>
-                    </div>
                 </div>
             </div>
 

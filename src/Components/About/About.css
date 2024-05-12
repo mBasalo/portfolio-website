@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin: 40px 120px;
+    margin: 100px 120px;
     margin-bottom: 20px;
 }
 
@@ -14,7 +14,7 @@
 
 .about-title h1 {
     padding: 0 30px;
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -27,12 +27,12 @@
 
 .about-sections {
     display: flex;
-    gap: 50px;
+    gap: 2rem;
 }
 
 .about-left img {
-    width: 240px;
-    height: 300px;
+    width: 12rem;
+    height: 15rem;
     border: 2px solid rgb(64, 64, 64);
 
 }
@@ -40,14 +40,14 @@
 .about-right {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 2rem;
 }
 
 .about-para {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-size: 18px;
+    gap: 1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -55,6 +55,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
 }
 
 .about-skill {
