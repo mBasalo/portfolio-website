@@ -88,7 +88,7 @@
 @media(max-width: 768px) {
     .hero {
         margin: 0 auto;
-        margin-top: 12rem;
+        margin-top: 10rem;
     }
 
     .hero h1 {
@@ -114,5 +114,5 @@
         padding: 8px 50px;
 
 
-
+    }
 }
