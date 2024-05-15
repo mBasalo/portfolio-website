@@ -78,3 +78,41 @@
     text-decoration: none;
     color: white;
 }
+
+
+/* ---------------------------------------------------------------------------------------
+
+
+-------------------------------MOBILE VERSIONS-------------------------------------------*/
+
+@media(max-width: 768px) {
+    .hero {
+        margin: 0 auto;
+        margin-top: 12rem;
+    }
+
+    .hero h1 {
+        width: 90%;
+    }
+
+    .hero-p {
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+    }
+
+    .hero-action {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    .hero-connect {
+        padding: 8px 50px;
+
+
+
+}
