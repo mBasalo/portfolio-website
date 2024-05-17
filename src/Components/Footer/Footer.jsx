@@ -30,9 +30,9 @@ const Footer = () => {
             <p className="footer-bottom-left">2024 Mauricio Bassalo. All rights reserved.</p>
 
             <div className="footer-bottom-right">
-                <p>Term of Services</p>
-                <p>Privacy Policy</p>
-                <p>Conect with me</p>
+                <p>Terms of Services</p>
+                {/* <p>Privacy Policy</p> */}
+                <p>About me</p>
             </div>
         </div>
 

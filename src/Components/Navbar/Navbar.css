@@ -87,7 +87,7 @@
 @media(max-width: 768px) {
     .navbar {
         width: 99%;
-        margin: 20px  0;
+        margin: 20px auto;
         display: flex;
         justify-content: space-around;
         
@@ -107,7 +107,7 @@
         display: block;
         position: relative;
         top: 30px;
-        left: 290px;
+        left: 90px;
         width: 30px;
     }
 
