@@ -11,13 +11,14 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Contact = () => {
 
-      const [menu, setMenu] = useState("about");
+      const [menu, setMenu] = useState("contact");
 
 
 
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
+        
     
         formData.append("access_key", "48ad9d29-0407-4e14-acb9-182e5d9c3beb");
     
@@ -35,7 +36,6 @@ export const Contact = () => {
     
         if (res.success) {
           alert(res.message);
-          setMenu("home")
 
         }
       };
