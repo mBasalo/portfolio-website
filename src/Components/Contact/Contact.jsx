@@ -58,7 +58,7 @@ export const Contact = () => {
                     
                 <div className="contact-details">
 
-                    <div className="contact-detail">
+                <div className="contact-detail">
                         <img src={mail_icon} alt="" />
                         <p>mbasalogutierrez@gmail.com</p>
                     </div>
