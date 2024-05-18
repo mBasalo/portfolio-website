@@ -26,15 +26,18 @@
 
 .contact-section {
     display: flex;
-    align-items: center;
     gap: 4rem;
 }
 
 .contact-left {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
 .contact-left h1 {
+    position: relative;
+    right: 2.8rem;
     font-size: 2rem;
     font-weight: 700;
     background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
@@ -54,21 +57,17 @@
 .contact-details {
     display: flex;
     flex-direction: column;
-
-
+    align-content: center;
     gap: 2rem;
     color: #d8d8d8;
-    font-size: 15px;
 }
 
 .contact-detail {
     display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    gap: 1rem;
     transition: 0.2s;
-    cursor: pointer;
+    cursor: pointer;    
 }
+
 
 .contact-detail:hover {
     transform: scale(1.1);
@@ -78,10 +77,11 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 15px;
+    gap: 1.2rem;
 }
 
 .contact-right label {
+    width: 100%;
     color: #d8d8d8;
     font-size: 1rem;
     font-weight: 500;

@@ -65,7 +65,9 @@
     padding: 8px 70px;
     border-radius: 50px;
     border: 2px solid #fff;
-    cursor: pointer;
+    background-color: #212120;
+    color: aliceblue;
+        cursor: pointer;
     transition: 0.3s;
 }
 

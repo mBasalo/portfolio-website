@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import './Hero.css'
 import profile_img from '../../assets/profile_img.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import resume from '../../assets/resume.pdf'
 
 
 const Hero = () => {
 
   const [menu, setMenu] = useState("");
+
+    const handleClick = () => {
+        window.open(resume, '_blank');
+    };
 
   return (
     <div id='home' className='hero'>
@@ -20,9 +25,10 @@ const Hero = () => {
  
 
             
-            <div className="hero-resume">
-                My resume
-            </div>     
+        <button className="hero-resume" onClick={handleClick}>
+            My resume
+        </button>   
+
         </div>
 
 
