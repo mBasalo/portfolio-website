@@ -1,41 +1,51 @@
-import project1_img from '../assets/project_1.svg'
 import project2_img from '../assets/project_2.svg'
 import project3_img from '../assets/project_3.svg'
 import project4_img from '../assets/project_4.svg'
 import project5_img from '../assets/project_5.svg'
 import project6_img from '../assets/project_6.svg'
+import soundseeker from '../assets/sound_seeker.png'
+import dh_odonto from '../assets/dh_odonto.png'
+import tic_tac_toe from '../assets/tic_tac_toe.png'
+import manage_website from '../assets/manage_website.png'
+
 
 const mywork_data = [
-    {
-        w_no:1,
-        w_name:"Web design",
-        w_img:project1_img
-    },
+    
     {
         w_no:2,
-        w_name:"Web design",
-        w_img:project2_img
-    },
-    {
-        w_no:3,
         w_name:"Web design",
         w_img:project3_img
     },
     {
-        w_no:4,
+        w_no:3,
         w_name:"Web design",
         w_img:project4_img
     },
     {
-        w_no:5,
+        w_no:4,
         w_name:"Web design",
-        w_img:project5_img
+        w_img:manage_website,
+        url: "https://manage-website-15vgihgb7-mbasalo.vercel.app/"
+        },
+    {
+        w_no:5,
+        w_name:"Tic tac toe",
+        w_img:tic_tac_toe,
+        url: "https://ta-te-2ciqcveuh-mbasalo.vercel.app/"
     },
     {
         w_no:6,
-        w_name:"Web design",
-        w_img:project6_img
+        w_name:"Clinica odontologica",
+        w_img:dh_odonto,
+        url: "https://mbasalo-frontlll-final.vercel.app/"
     },
+    {
+        w_no:6,
+        w_name:"SoundSeeker",
+        w_img:soundseeker,
+        url: "https://front-proyecto-integrador.vercel.app/"
+    }
+    
 ]
  
 export default mywork_data;

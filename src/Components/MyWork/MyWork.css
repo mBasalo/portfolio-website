@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
     
 }
 
@@ -36,6 +36,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     width: 220px;
+    height: 100%;
     cursor: pointer;
 }
 
@@ -46,7 +47,7 @@
     border: 2px solid #ff00ff;
 }
 
-.mywork-showmore {
+.mywork-showmore, .mywork-showless {
     display: flex;
     align-items: center;
     gap: .8rem;
@@ -61,9 +62,11 @@
     margin-top: 1px;
 }
 
-.mywork-showmore:hover {
+.mywork-showmore:hover, .mywork-showless:hover {
     gap: 30px;
     transition: 0.6s;
+    transform: scale(1.05);
+    border: 2px solid #b415ff;
     
 }
 
