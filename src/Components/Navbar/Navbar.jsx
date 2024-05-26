@@ -1,57 +1,79 @@
-import React, { useRef, useState } from 'react'
-import './Navbar.css'
-import underline from '../../assets/nav_underline.svg'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import menu_open from '../../assets/menu_open.svg'
-import menu_close from '../../assets/menu_close.svg'
+import React, { useState } from 'react';
+import './Navbar.css';
+import underline from '../../assets/nav_underline.svg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import menu_open from '../../assets/menu_open.svg';
+import menu_close from '../../assets/menu_close.svg';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
-
+  const { t, i18n } = useTranslation();
   const [menu, setMenu] = useState("home");
-  const menuRef = useRef();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const openMenu = () => {
-    menuRef.current.style.right="0";
-  }
-
-  const closeMenu = () => {
-    menuRef.current.style.right="-350px";
-  }
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const handleLanguageChange = (event) => {
-    setLanguage(event.target.value);
-  }
+    i18n.changeLanguage(event.target.value);
+  };
 
   return (
     <div className='navbar'>
+      <h1>
+        <AnchorLink className='anchor-link' offset={200} href='#home'>
+          <p onClick={() => setMenu("home")}>mBasalo.uy</p>
+        </AnchorLink>
+      </h1>
+      <img
+        className='nav-mob-open'
+        src={menu_open}
+        onClick={toggleMenu}
+        alt="Open menu"
+      />
 
-<h1><AnchorLink className='anchor-link' offset={200} href='#home'><p onClick={() => setMenu("home")}>mBasalo.uy</p><></></AnchorLink></h1>
-<img className='nav-mob-open' src={menu_open} onClick={openMenu} alt="" />
+      <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+        <img
+          src={menu_close}
+          alt="Close menu"
+          className="nav-mob-close"
+          onClick={toggleMenu}
+        />
+        <li>
+          <AnchorLink className='anchor-link' offset={200} href='#home'>
+            <p onClick={() => setMenu("home")}>{t('home')}</p>
+            {menu === "home" && <img src={underline} alt='underline' />}
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className='anchor-link' offset={80} href='#work'>
+            <p onClick={() => setMenu("work")}>{t('portfolio')}</p>
+            {menu === "work" && <img src={underline} alt='underline' />}
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink className='anchor-link' offset={80} href='#contact'>
+            <p onClick={() => setMenu("contact")}>{t('contact')}</p>
+            {menu === "contact" && <img src={underline} alt='underline' />}
+          </AnchorLink>
+        </li>
+      </ul>
 
-        <ul ref={menuRef} className="nav-menu">
-          <img src={menu_close} alt="" className="nav-mob-close" onClick={closeMenu}/>
-            <li><AnchorLink className='anchor-link' offset={200} href='#home'><p onClick={() => setMenu("home")}>Home</p>{menu === "home"?<img src={underline} alt=''/>:<></>}</AnchorLink></li>
-            {/* <li><AnchorLink className='anchor-link' offset={100} href='#about'><p onClick={() => setMenu("about")}>About Me</p>{menu === "about"?<img src={underline} alt=''/>:<></>}</AnchorLink></li>
-            <li><AnchorLink className='anchor-link' offset={100} href='#services'><p onClick={() => setMenu("services")}>Services</p>{menu === "services"?<img src={underline} alt=''/>:<></>}</AnchorLink></li> */}
-            <li><AnchorLink className='anchor-link' offset={80} href='#work'><p onClick={() => setMenu("work")}>Portfolio</p>{menu === "work"?<img src={underline} alt=''/>:<></>}</AnchorLink></li>
-            <li><AnchorLink className='anchor-link' offset={80} href='#contact'><p onClick={() => setMenu("contact")}>Contact</p>{menu === "contact"?<img src={underline} alt=''/>:<></>}</AnchorLink></li> 
-        </ul>
-
-        <div className='nav-language'>
+      <div className='nav-language'>
         <select onChange={handleLanguageChange} className='language-select'>
           <option value="en">English</option>
           <option value="es">Español</option>
         </select>
       </div>
 
-        <div className='nav-connect'><AnchorLink className='anchor-link' offset={80} href='#contact'><p onClick={() => setMenu("contact")}>Connect with me</p></AnchorLink>  </div>
-
-
-
-
-
+      <div className='nav-connect'>
+        <AnchorLink className='anchor-link' offset={80} href='#contact'>
+          <p onClick={() => setMenu("contact")}>{t('connect_with_me')}</p>
+        </AnchorLink>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

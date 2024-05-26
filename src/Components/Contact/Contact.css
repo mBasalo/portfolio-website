@@ -55,16 +55,29 @@
 
 .contact-details {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-content: center;
     gap: 2rem;
     color: #d8d8d8;
+    margin-top: 9.5rem;
+    
+    a{
+        text-decoration: none;
+    }
+    
 }
 
 .contact-detail {
     display: flex;
     transition: 0.2s;
     cursor: pointer;
+    
+}
+
+.font-awesome {
+    width: 3rem;
+    height: 3rem;
+    color: white;
     
 }
 
