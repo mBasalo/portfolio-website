@@ -48,19 +48,19 @@ export const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <a href="https://github.com/mBasalo">
-                <FontAwesomeIcon icon={faGithub} className='font-awesome' />
+                <FontAwesomeIcon icon={faGithub} className='font-awesome git' />
               </a>
             </div>
 
             <div className="contact-detail">
               <a href="https://www.linkedin.com/in/mauricio-basalo/">
-                <FontAwesomeIcon icon={faLinkedin} className='font-awesome' />
+                <FontAwesomeIcon icon={faLinkedin} className='font-awesome linkedin' />
               </a>
             </div>
 
             <div className="contact-detail">
               <a href="https://www.youtube.com/@mauriciobasalogutierrez5561/videos">
-                <FontAwesomeIcon icon={faYoutube} className='font-awesome' />
+                <FontAwesomeIcon icon={faYoutube} className='font-awesome youtube' />
               </a>
             </div>
           </div>

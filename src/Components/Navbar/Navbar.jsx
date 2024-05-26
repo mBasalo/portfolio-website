@@ -62,8 +62,9 @@ const Navbar = () => {
 
       <div className='nav-language'>
         <select onChange={handleLanguageChange} className='language-select'>
-          <option value="en">English</option>
           <option value="es">Español</option>
+          <option value="en">English</option>
+
         </select>
       </div>
 

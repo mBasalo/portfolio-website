@@ -77,13 +77,25 @@
 .font-awesome {
     width: 3rem;
     height: 3rem;
+    color: rgb(208, 203, 203);
+}
+
+ .youtube:hover {
+    color: red;
+}
+
+.linkedin:hover {
+    color: rgb(50, 50, 234);
+}
+
+.git:hover {
     color: white;
-    
 }
 
 
 .contact-detail:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    
 }
 
 .contact-right {
