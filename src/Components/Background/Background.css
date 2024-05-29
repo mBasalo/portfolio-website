@@ -6,11 +6,12 @@
 }
 
 section {
-    width: 100%;
+    width: 150%;
+
     overflow: hidden;
     position: fixed;
     z-index: 1;
-    top: -15rem;
+    top: -30rem;
     left: 1rem;
 }
 
@@ -39,14 +40,18 @@ section {
 
 
 section .row div:nth-child(odd) {
-    animation: animate1 200s linear infinite;
+    animation: animate1 300s  infinite;
+
+    animation-timing-function: ease;
+
     
 
 }
 
 
 section .row div:nth-child(even) {
-    animation: animate2 200s linear infinite;
+    animation: animate2 300s  infinite;
+    animation-timing-function: ease;
 }
 
 @keyframes animate1 {
@@ -58,6 +63,8 @@ section .row div:nth-child(even) {
     100% {
         transform: translateX(100%);
     }
+
+    
 }
 
 @keyframes animate2 {
