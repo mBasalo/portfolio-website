@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 12rem;
+    
 }
 
 .hero img {
@@ -16,6 +17,8 @@
     overflow: hidden;
 	box-shadow: 0 5px 1rem 0px rgba(181, 135, 223, 0.6);
 	transform: translatey(0px);
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -24,6 +27,8 @@
     font-size: 2rem;
     font-weight: 600;
     margin-top: -2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 span {
@@ -38,6 +43,8 @@
     text-align: center;
     font-size: 1rem;
     line-height: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-action {
@@ -48,27 +55,16 @@
     font-weight: 500;
 }
 
-.hero-connect {
-    padding: 8px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.hero-connect:hover {
-    transform: scale(1.05);
-    border: 2px solid white;
-}
-
 .hero-resume {
     padding: 8px 70px;
     border-radius: 50px;
     border: 2px solid #fff;
     background-color: #212120;
     color: aliceblue;
-        cursor: pointer;
+    cursor: pointer;
     transition: 0.3s;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-resume:hover {

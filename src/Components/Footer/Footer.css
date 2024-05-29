@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;  
     gap: 1rem;
+    
 }
 
 .footer-email-input {
@@ -32,6 +33,7 @@
     padding: .5rem 1rem;
     border-radius: 50px;
     background: #32323b;
+    
 }
 
 .footer-email-input:hover {

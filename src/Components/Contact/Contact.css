@@ -13,6 +13,8 @@
     padding: 0px 30px;
     font-size: 2.5rem;
     font-weight: 600;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-title img {
@@ -32,6 +34,8 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-left h1 {
@@ -71,6 +75,8 @@
     display: flex;
     transition: 0.2s;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
     
 }
 
@@ -78,6 +84,7 @@
     width: 3rem;
     height: 3rem;
     color: rgb(208, 203, 203);
+
 }
 
  .youtube:hover {
@@ -103,6 +110,8 @@
     flex-direction: column;
     align-items: start;
     gap: 1.2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-right label {
