@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div id='footer' className='footer'>
 
-        <div className="footer-top">
+        {/* <div className="footer-top">
             <div className="footer-top-left">
                 <h1>mBasalo.uy</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi ad, consectetur molestiae cum ipsa veritatis sint sed mollitia laudantium.</p>
@@ -22,15 +22,14 @@ const Footer = () => {
                 <div className="footer-subscribe">Subscribe</div>
 
             </div>
-        </div>
+        </div> */}
 
         <hr />
 
         <div className="footer-bottom">
-            <p className="footer-bottom-left">2024 Mauricio Bassalo. All rights reserved.</p>
+            <p className="footer-bottom-left">2024 Mauricio Basalo - Frontend Developer.</p>
 
             <div className="footer-bottom-right">
-                <p>Terms of Services</p>
                 {/* <p>Privacy Policy</p> */}
                 <p>About me</p>
             </div>
