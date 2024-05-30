@@ -12,6 +12,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log("Toggle menu clicked");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -64,7 +65,6 @@ const Navbar = () => {
         <select onChange={handleLanguageChange} className='language-select'>
           <option value="es">Español</option>
           <option value="en">English</option>
-
         </select>
       </div>
 
