@@ -4,7 +4,7 @@ import IconGroup from './IconGroup';
 
 const Background = () => {
   // Define how many times quieres renderizar el componente IconGroup
-  const numGroups = 50;
+  const numGroups = 44;
 
   return (
     <section>

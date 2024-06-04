@@ -17,7 +17,7 @@ const IconGroup = () => {
   return (
     <div className='icon-group'>
       {icons.map((icon, index) => (
-        <FontAwesomeIcon key={index} icon={icon} size="2x" className='icon'/>
+        <FontAwesomeIcon key={index} icon={icon} size="2x" className='icon'/>     
       ))}
     </div>
   );

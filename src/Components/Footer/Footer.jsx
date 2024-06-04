@@ -27,13 +27,12 @@ const Footer = () => {
         <hr />
 
         <div className="footer-bottom">
-            <p className="footer-bottom-left">2024 Mauricio Basalo - Frontend Developer.</p>
-
+            <p className="footer-bottom-left">2024 Mauricio Basalo© - Frontend Developer.</p>
             <div className="footer-bottom-right">
                 {/* <p>Privacy Policy</p> */}
                 <p>About me</p>
             </div>
-        </div>
+        </div> 
 
     </div>
   )

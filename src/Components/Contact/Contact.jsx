@@ -1,4 +1,6 @@
 import "./Contact.css";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import theme_pattern from "../../assets/theme_pattern.svg";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,6 +36,7 @@ export const Contact = () => {
 
     if (res.success) {
       alert(res.message);
+      
     }
   };
 
