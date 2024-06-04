@@ -41,7 +41,7 @@ i18n
           my_resume: "Mi currículum",
           introduction: "Soy Mauricio Basalo, desarrollador frontend en Uruguay.",
           description: "Soy un desarrollador frontend de Uruguay con 2 años de experiencia como freelancer buscando nuevas oportunidades.",
-          get_in_touch: "Ponte en contacto",
+          get_in_touch: "Contactate",
           lets_talk: "Hablemos",
           available: "Actualmente estoy disponible para nuevos proyectos, así que no dudes en enviarme un mensaje sobre lo que tienes en mente.",
           your_name: "Tu Nombre",

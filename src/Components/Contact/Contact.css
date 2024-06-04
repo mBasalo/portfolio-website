@@ -171,10 +171,13 @@
   .contact {
     margin: 8rem auto 1rem;
     gap: 0;
+    width: 100%;
+    
   }
 
   .contact-section {
     flex-direction: column;
+    width: 100%;
   }
 
   .contact-details {
