@@ -7,20 +7,12 @@ import soundseeker from '../assets/sound_seeker.png'
 import dh_odonto from '../assets/dh_odonto.png'
 import tic_tac_toe from '../assets/tic_tac_toe.png'
 import manage_website from '../assets/manage_website.png'
+import tomato from '../assets/tomato-web.png.png'
 
 
 const mywork_data = [
     
-    {
-        w_no:2,
-        w_name:"Web design",
-        w_img:project3_img
-    },
-    {
-        w_no:3,
-        w_name:"Web design",
-        w_img:project4_img
-    },
+
     {
         w_no:2,
         w_name:"Web design",
@@ -54,6 +46,12 @@ const mywork_data = [
         w_name:"SoundSeeker",
         w_img:soundseeker,
         url: "https://front-proyecto-integrador.vercel.app/"
+    },
+    {
+        w_no:7,
+        w_name:"Tomato website",
+        w_img:tomato,
+        url: "https://tomato-food-delivery-alpha.vercel.app/"
     }
     
 ]
