@@ -25,7 +25,7 @@ const mywork_data = [
     },
     {
         w_no:4,
-        w_name:"Web design",
+        w_name:"Manage - basic website",
         w_img:manage_website,
         url: "https://manage-website-15vgihgb7-mbasalo.vercel.app/"
         },
