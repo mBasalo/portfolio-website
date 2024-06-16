@@ -39,7 +39,7 @@ const MyWork = () => {
       <div className="mywork-container">
         {mywork_data.slice().reverse().slice(0, visibleItems).map((work, index) => (
           <div key={index}>
-            <h3>{work.w_name}</h3>
+            {/* <h3>{work.w_name}</h3> */}
             <img
               src={work.w_img}
               alt={work.w_name}
