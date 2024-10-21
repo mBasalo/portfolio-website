@@ -17,9 +17,9 @@ const Hero = () => {
       <h1>
         <span>{t('introduction')}</span>
       </h1>
-      <p className='hero-p'>
+      {/* <p className='hero-p'>
         {t('description')}
-      </p>
+      </p> */}
       <div className='hero-action'>
         <button className="hero-resume" onClick={handleClick}>
           {t('my_resume')}

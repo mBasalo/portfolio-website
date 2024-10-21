@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import underline from '../../assets/nav_underline.svg';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
 import { useTranslation } from 'react-i18next';
 
-const Navbar = () => {
+const Navbar = ({ toggleBackground, isBackgroundActive }) => {
   const { t, i18n } = useTranslation();
   const [menu, setMenu] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,9 +23,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <h1>
-        <AnchorLink className='anchor-link' offset={200} href='#home'>
+        <Link to='/' className='anchor-link'>
           <p onClick={() => setMenu("home")}>mBasalo.uy</p>
-        </AnchorLink>
+        </Link>
       </h1>
       <img
         className='nav-mob-open'
@@ -33,6 +33,13 @@ const Navbar = () => {
         onClick={toggleMenu}
         alt="Open menu"
       />
+
+      <div className='nav-language'>
+        <select onChange={handleLanguageChange} className='language-select'>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
 
       <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <img
@@ -42,37 +49,35 @@ const Navbar = () => {
           onClick={toggleMenu}
         />
         <li>
-          <AnchorLink className='anchor-link' offset={200} href='#home'>
+          <Link to='/' className='anchor-link'>
             <p onClick={() => setMenu("home")}>{t('home')}</p>
             {menu === "home" && <img src={underline} alt='underline' />}
-          </AnchorLink>
+          </Link>
         </li>
         <li>
-          <AnchorLink className='anchor-link' offset={80} href='#work'>
+          <Link to='/mywork' className='anchor-link'>
             <p onClick={() => setMenu("work")}>{t('portfolio')}</p>
             {menu === "work" && <img src={underline} alt='underline' />}
-          </AnchorLink>
+          </Link>
         </li>
         <li>
-          <AnchorLink className='anchor-link' offset={80} href='#contact'>
+          <Link to='/contact' className='anchor-link'>
             <p onClick={() => setMenu("contact")}>{t('contact')}</p>
             {menu === "contact" && <img src={underline} alt='underline' />}
-          </AnchorLink>
+          </Link>
         </li>
       </ul>
 
-      <div className='nav-language'>
-        <select onChange={handleLanguageChange} className='language-select'>
-          <option value="es">Español</option>
-          <option value="en">English</option>
-        </select>
+      <div className='nav-connect'>
+        <Link to='/contact' className='anchor-link'>
+          <p onClick={() => setMenu("contact")}>{t('connect_with_me')}</p>
+        </Link>
       </div>
 
-      <div className='nav-connect'>
-        <AnchorLink className='anchor-link' offset={80} href='#contact'>
-          <p onClick={() => setMenu("contact")}>{t('connect_with_me')}</p>
-        </AnchorLink>
-      </div>
+      {/* Botón para activar/desactivar el background */}
+      <button className='nav-language' onClick={toggleBackground}>
+        {isBackgroundActive ? t('Disable Background') : t('Enable Background')}
+      </button>
     </div>
   );
 };

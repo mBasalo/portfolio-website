@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
 
-export const Contact = () => {
+const Contact = () => {
   const { t } = useTranslation();
 
   const [menu, setMenu] = useState("contact");
@@ -105,3 +105,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;

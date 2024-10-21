@@ -16,7 +16,7 @@ const MyWork = () => {
     }
   };
 
-  const [visibleItems, setVisibleItems] = useState(6);
+  const [visibleItems, setVisibleItems] = useState(8);
   const [showLessVisible, setShowLessVisible] = useState(false);
 
   const showMore = () => {

@@ -16,7 +16,6 @@ i18n
           connect_with_me: "Connect with me",
           my_resume: "My resume",
           introduction: "I'm Mauricio Basalo, frontend developer based in Uruguay.",
-          description: "I am a frontend developer from Uruguay with 2 years of experience as a freelancer frontend developer looking for new opportunities.",
           get_in_touch: "Get in touch",
           lets_talk: "Let's talk",
           available: "I'm currently available to take on new projects, so feel free to send me a message about what you have on mind. You can contact anytime.",

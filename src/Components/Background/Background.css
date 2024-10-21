@@ -24,7 +24,7 @@ section {
 
 
 .icon {
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.04);
     transition: 1s;
     padding: 0 1rem;
     user-select: none;
@@ -32,7 +32,7 @@ section {
 }
 
 .icon:hover {
-    color: #0f0;
+    color: rgb(54, 168, 54);
     text-shadow: 0 0 120px #0f0;
     transition: 0s;
 }

@@ -4,12 +4,13 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
+    margin-left: 12rem;
     
 }
 
 .mywork-title {
-    position: relative
+    position: relative;
 }
 
 .mywork-title h1 {
@@ -30,7 +31,7 @@
 
 .mywork-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     
 }

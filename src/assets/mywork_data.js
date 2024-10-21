@@ -55,7 +55,7 @@ const mywork_data = [
         w_no:6,
         w_name:"SoundSeeker",
         w_img:soundseeker,
-        url: "https://front-proyecto-integrador.vercel.app/"
+        url: "https://soundseeker.davidgarmo.me/"
     },
     {
         w_no:7,
