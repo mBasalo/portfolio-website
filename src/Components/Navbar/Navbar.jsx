@@ -12,7 +12,6 @@ const Navbar = ({ toggleBackground, isBackgroundActive }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log("Toggle menu clicked");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -33,13 +32,6 @@ const Navbar = ({ toggleBackground, isBackgroundActive }) => {
         onClick={toggleMenu}
         alt="Open menu"
       />
-
-      <div className='nav-language'>
-        <select onChange={handleLanguageChange} className='language-select'>
-          <option value="es">Español</option>
-          <option value="en">English</option>
-        </select>
-      </div>
 
       <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <img
@@ -66,18 +58,19 @@ const Navbar = ({ toggleBackground, isBackgroundActive }) => {
             {menu === "contact" && <img src={underline} alt='underline' />}
           </Link>
         </li>
+        {/* Mueve los botones al menú en la vista móvil */}
+        <li className="nav-language">
+          <select onChange={handleLanguageChange} className='language-select'>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </li>
+        <li className="nav-toggle-background">
+          <button onClick={toggleBackground}>
+            {isBackgroundActive ? t('Disable Background') : t('Enable Background')}
+          </button>
+        </li>
       </ul>
-
-      <div className='nav-connect'>
-        <Link to='/contact' className='anchor-link'>
-          <p onClick={() => setMenu("contact")}>{t('connect_with_me')}</p>
-        </Link>
-      </div>
-
-      {/* Botón para activar/desactivar el background */}
-      <button className='nav-language' onClick={toggleBackground}>
-        {isBackgroundActive ? t('Disable Background') : t('Enable Background')}
-      </button>
     </div>
   );
 };

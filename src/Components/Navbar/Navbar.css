@@ -109,65 +109,75 @@
     }
 
 }
+/* Otros estilos existentes */
 
+.nav-language,
+.nav-toggle-background {
+    display: none;
+}
+
+/* Estilos para pantallas pequeñas */
 @media(max-width: 768px) {
-    
-    @media(max-width: 768px) {
-        .navbar {
-            width: 100%;
-            margin: auto ;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            border: 1px solid red;
-            height: 5%;
-
-        }
-    
-        .nav-connect {
-            display: none;
-        }
-    
-        .nav-mob-open {
-            display: block;
-            cursor: pointer;
-        }
-    
-        .nav-mob-close {
-            display: block;
-            width: 30px;
-            position: absolute;
-            top: 1.8rem;
-            right: 10.3rem;
-            cursor: pointer;
-        }
-    
-        .nav-menu {
-            position: fixed;
-            flex-direction: column;
-            top: 0;
-            right: -300px; /* Oculto por defecto */
-            width: 250px;
-            height: 26rem; /* Ocupa toda la altura de la pantalla */
-            transition: right 0.5s;
-            opacity: .95;
-            box-shadow: 1px 0 0.5rem -2px black;
-            background: #1a0c1b;
-            gap: 3rem;
-            z-index: 5; /* Asegúrate de que esté por encima de otros elementos */
-        }
-    
-        .nav-menu.open {
-            right: 0; /* Muestra el menú */
-        }
-    
-        .nav-menu li {
-            font-size: 2rem;
-            padding-left: 20px;
-            flex-direction: row;
-            color: antiquewhite;
-        }
-
-
-          }
+    .nav-language,
+    .nav-toggle-background {
+        display: block;
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
     }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 10%;
+        
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-mob-close {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 1.8rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        right: -300px; /* Oculto por defecto */
+        width: 250px;
+        height: 100vh;
+        transition: right 0.5s;
+        opacity: 0.95;
+        box-shadow: 1px 0 0.5rem -2px black;
+        background: #1a0c1b;
+        gap: 2rem;
+        z-index: 5; /* Asegúrate de que esté por encima de otros elementos */
+    }
+
+    .nav-menu.open {
+        right: 0; /* Muestra el menú */
+    }
+
+    .nav-menu li {
+        font-size: 1.5rem;
+        padding-left: 20px;
+        flex-direction: row;
+        color: antiquewhite;
+    }
+}
